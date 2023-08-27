@@ -23,17 +23,19 @@ def powerOfTwo(power: BigInt): BigInt = {
   loop(power)
 }
 
-// def printNumbersResult(fArgs: Array[String]): Unit = {
-//   @tailrec
-//   def loop(x: Int, y: Int, n: Int): Unit =
-//     if (x == y) println("")
-//     else println(" ")
+def printNumbersResult(x: Int, y: Int, n: Int): Unit = {
+  @tailrec
+  def loop(x: Int, y: Int, n: Int): Unit =
+    if (n == 1) println(s"${((x + y).toString() + " ") * (x + y).toString().length}is the result")
+    else loop(x + y, y, n - 1)
 
-//   loop(fArgs(0), fArgs(1), fArgs(2))
-// }
+  loop(x, y, n)
+}
 
 object Recursion extends App {
+  val input = "I like Scala"
 
-  // println(powerOfTwo(1458))
+  val res = input.split("\\s+").reverse.mkString(" ")
 
+  println(res)
 }
