@@ -1,0 +1,7 @@
+id: file://<WORKSPACE>/src/lectures/week1basics/TypeValuesVariables.scala:[19..25) in Input.VirtualFile("file://<WORKSPACE>/src/lectures/week1basics/TypeValuesVariables.scala", "package lectures.
+
+object TypeValuesVariables extends App {}
+")
+file://<WORKSPACE>/src/lectures/week1basics/TypeValuesVariables.scala:3: error: expected identifier; obtained object
+object TypeValuesVariables extends App {}
+^

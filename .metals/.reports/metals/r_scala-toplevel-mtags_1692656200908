@@ -1,0 +1,4 @@
+id: file://<WORKSPACE>/src/lectures/week1basics/StringOperations.scala:[17..17) in Input.VirtualFile("file://<WORKSPACE>/src/lectures/week1basics/StringOperations.scala", "package lectures.")
+file://<WORKSPACE>/src/lectures/week1basics/StringOperations.scala:1: error: expected identifier; obtained eof
+package lectures.
+                 ^
