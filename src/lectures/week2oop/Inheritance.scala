@@ -15,17 +15,17 @@ class TestButton extends Button {
   override def click(): String = s"rounded button -test- has been clicked"
 }
 
-abstract class Event {
-  def trigger(eventName: String): Unit
-}
+// abstract class Event {
+//   def trigger(eventName: String): Unit
+// }
 
-class Listener(val eventName: String, var event: Event) extends Event {
-  def register(evt: Event): Unit = event = evt
-  def sendNotification(): Unit = event.trigger(eventName)
-  override def trigger(eventName: String): Unit = println(
-    s"trigger $eventName event"
-  )
-}
+// class Listener(val eventName: String, var event: Event) extends Event {
+//   def register(evt: Event): Unit = event = evt
+//   def sendNotification(): Unit = event.trigger(eventName)
+//   override def trigger(eventName: String): Unit = println(
+//     s"trigger $eventName event"
+//   )
+// }
 
 // ----------------------------------------------------------------
 
