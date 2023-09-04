@@ -13,4 +13,15 @@ def guard = (data: Any, maxLength: Int) =>
     case _ =>
       "What is this? It's neither a string nor a list."
 
-object Patterns extends App {}
+object Patterns extends App {
+  val pattern = "\\b\\w".r
+  val input = scala.io.StdIn.readLine()
+
+  if (input != null && input.nonEmpty) {
+    val initials = pattern.findAllIn(input).mkString(". ").concat(".")
+
+    println(initials)
+  } else {
+    println("Oops, something is wrong")
+  }
+}
