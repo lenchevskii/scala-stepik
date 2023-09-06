@@ -1,3 +1,5 @@
+package exercises
+
 val config: Option[Map[String, String]] = Some(
   Map("host" -> "localhost", "port" -> "8080")
 )
